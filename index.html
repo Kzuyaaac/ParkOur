@@ -3,33 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ParkOur</title>
+  <title>Park Our - A Parkour Game</title>
   <link rel="icon" href="/image/icp1.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/styles.css" />
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <img src="/image/p1bnr.png" alt="Project Banner" class="banner" />
+    <img src="/image/p1bnr.png" alt="Park Our Banner" class="banner" />
 
-    <h1>ParkOur</h1>
-    <p><strong>Platform:</strong> PC (Desktop)</p>
+    <h1>Park Our - A Parkour Game</h1>
+    <p><strong>Platform:</strong> PC</p>
     <p><strong>Engine:</strong> Unreal Engine</p>
-    <p><strong>Developer:</strong> Solo Developer</p>
 
-    <h3>Description:</h3>
-    <p>ParkOur is a parkour game developed using Unreal Engine by a solo indie developer. The game features high-quality graphics and dynamic gameplay, offering players a thrilling free-running experience. ParkOur was developed during June and uses high-quality assets from Unreal Engine's asset store.</p>
-
-    <h3>Assets Used:</h3>
-    <ul style="list-style-type: none;">
-      <li><i class="fa-solid fa-link"></i> <a href="https://www.fab.com/listings/880e319a-a59e-4ed2-b268-b32dac7fa016" class="asset-link" target="_blank">Motion Matching</a></li>
-      <li><i class="fa-solid fa-link"></i> <a href="https://www.fab.com/listings/2e7272b6-6aea-4ab4-a478-112f0cac2635" class="asset-link" target="_blank">Science Fiction Valley Town</a></li>
+    <h3>Developer:</h3>
+    <ul>
+      <li><a href="https://www.instagram.com/zahir_rh/" target="_blank" class="developer-name">Indie Developer</a></li>
     </ul>
 
-    <h3>How to Play:</h3>
-    <p>In ParkOur, the player is given an initial 10 seconds to complete a level. As the player progresses, they can pass through checkpoints. Each time a checkpoint is passed, an additional 10 seconds is added to the timer. The goal is to complete the parkour course as smoothly and efficiently as possible, while racing against the constantly decreasing time.</p>
+    <p><strong>Published:</strong> January 28, 2024</p>
+
+    <h3>Description:</h3>
+    <p><em>Park Our</em> is an exciting parkour game where you navigate dynamic obstacle courses. Time is always ticking as you challenge yourself with complex jumps, shortcuts, and thrilling parkour challenges, all within the breathtaking graphics powered by Unreal Engine.</p>
+
+    <h3>Key Features:</h3>
+    <ul>
+      <li><i class="fa-solid fa-check-circle"></i> Dynamic Movement: Perform thrilling parkour stunts across challenging courses.</li>
+      <li><i class="fa-solid fa-check-circle"></i> Time-Based Gameplay: The clock is always ticking—get to the finish line as fast as you can.</li>
+      <li><i class="fa-solid fa-check-circle"></i> Challenging Obstacles: Test your skills with tricky jumps, shortcuts, and more.</li>
+      <li><i class="fa-solid fa-check-circle"></i> Realistic Graphics: Powered by Unreal Engine, the game features stunning visual realism.</li>
+    </ul>
+
+    <h3>Development Story:</h3>
+    <p>This game was created by me, an indie developer, using assets from the Unreal Marketplace. I completed it in one week while also preparing for the <a href="https://www.instagram.com/official.smkn4malang/p/C2ZIkuFphCW/?img_index=2" target="_blank">Gelar Karya Pembelajaran (GKP)</a> event at my school. It was a challenging but rewarding project!</p>
+
+    <h3>Assets Used:</h3>
+    <ul>
+      <li><i class="fa-solid fa-link"></i> <a href="https://www.fab.com/listings/880e319a-a59e-4ed2-b268-b32dac7fa016" class="asset-link" target="_blank" >Motion Matching</a></li>
+      <li><i class="fa-solid fa-link"></i> <a href="https://www.fab.com/listings/2e7272b6-6aea-4ab4-a478-112f0cac2635" class="asset-link" target="_blank" >Science Fiction Valley Town</a></li>
+    </ul>
+
+
+    <h3>Gameplay Instructions:</h3>
+    <p>Navigate the parkour course using dynamic movement. The clock is ticking, so hurry up! Use shortcuts to gain an advantage and reach the finish line as quickly as possible.</p>
 
     <h3>Game Keybinds:</h3>
     <table>
@@ -39,14 +58,19 @@
         <th>Description</th>
       </tr>
       <tr>
+        <td>Jump</td>
+        <td>Spacebar</td>
+        <td>Press to perform a jump in mid-air</td>
+      </tr>
+      <tr>
         <td>Move Forward</td>
         <td>W</td>
-        <td>Run forward</td>
+        <td>Press to move forward</td>
       </tr>
       <tr>
         <td>Move Left</td>
         <td>A</td>
-        <td>Run left</td>
+        <td>Press to move left</td>
       </tr>
       <tr>
         <td>Move Backward</td>
@@ -56,12 +80,7 @@
       <tr>
         <td>Move Right</td>
         <td>D</td>
-        <td>Run right</td>
-      </tr>
-      <tr>
-        <td>Jump</td>
-        <td>Space</td>
-        <td>Jump upward</td>
+        <td>Press to move right</td>
       </tr>
     </table>
 
@@ -70,74 +89,32 @@
       <img src="/image/1.png" alt="Screenshot 1" onclick="openPopup(this.src)" />
       <img src="/image/2.png" alt="Screenshot 2" onclick="openPopup(this.src)" />
       <img src="/image/3.png" alt="Screenshot 3" onclick="openPopup(this.src)" />
-      
-      <!-- Tombol Next dan Prev -->
-      <div class="arrow-container">
-        <span class="arrow" id="left-arrow"><i class="fas fa-chevron-left"></i></span>
-        <span class="arrow" id="right-arrow"><i class="fas fa-chevron-right"></i></span>
-      </div>
     </div>
-    
 
     <div class="popup" id="popup">
       <span class="close" onclick="closePopup()">&times;</span>
-      <img id="popup-img" src="" alt="Popup Image" />
+      <img src="" alt="Expanded Screenshot" id="popupImg">
     </div>
 
-    <!-- <h3>Gameplay Clip:</h3>
-<div class="gameplay-clip">
-  <img src="/image/gameplay.gif" alt="Gameplay Clip" class="gameplay-gif" />
-</div> -->
+    <h3>Gameplay Clip</h3>
+    <div class="gameplay-clip">
+      <video controls>
+        <source src="/Video/vid1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-<h3>Gameplay Clip:</h3>
-<div class="gameplay-clip">
-  <video width="100%" max-width="700" autoplay loop muted>
-    <source src="/Video/vid1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-    <!-- <a href="https://github.com/Kazuyya/Moti-Motion" class="source-link" target="_blank">
-      <i class="fab fa-github"></i> View Source Code on GitHub
-    </a> -->
   </div>
 
   <script>
-    const leftArrow = document.getElementById("left-arrow");
-    const rightArrow = document.getElementById("right-arrow");
-    const images = document.querySelectorAll(".gallery img");
-    let currentIndex = 0;
-
-    leftArrow.addEventListener("click", () => {
-      currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
-      updateGallery();
-    });
-
-    rightArrow.addEventListener("click", () => {
-      currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
-      updateGallery();
-    });
-
-    function updateGallery() {
-      images.forEach((img, index) => {
-        img.style.display = index === currentIndex ? "block" : "none";
-      });
-    }
-
     function openPopup(src) {
-      const popup = document.getElementById("popup");
-      const popupImg = document.getElementById("popup-img");
-      popupImg.src = src;
-      popup.style.display = "flex";
+      document.getElementById("popup").style.display = "flex";
+      document.getElementById("popupImg").src = src;
     }
 
     function closePopup() {
-      const popup = document.getElementById("popup");
-      popup.style.display = "none";
+      document.getElementById("popup").style.display = "none";
     }
-
-    // Initialize gallery display
-    updateGallery();
   </script>
 </body>
 </html>

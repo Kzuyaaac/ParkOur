@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 10px;
     background-color: #18181b;
     color: #e0e0e0;
@@ -8,7 +8,7 @@ body {
     align-items: center;
     margin: 0;
     flex-direction: column;
-    overflow-x: hidden; /* Menghindari scroll horizontal */
+    overflow-x: hidden;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     width: 100%;
-    box-sizing: border-box; /* Pastikan lebar container tidak melebihi lebar layar */
+    box-sizing: border-box;
 }
 
 .banner {
@@ -28,9 +28,30 @@ body {
     border-radius: 8px;
 }
 
+.developer-name {
+  font-family: 'Poppins', sans-serif;
+    color: #0099ff;
+    text-decoration: underline; 
+    font-weight: 600; 
+  }
+  
+  .developer-name:hover {
+    color: #66b3ff; 
+  }  
+
 h1, h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
+}
+
+a {
+    color: #1E90FF; /* Warna biru muda untuk link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+    color: #0056b3; /* Warna biru lebih gelap saat hover */
 }
 
 ul {
@@ -46,16 +67,16 @@ ul li {
 
 ul li i {
     margin-right: 10px;
-    color: #007bff;
+    color: #1E90FF; /* Warna biru muda untuk link */
 }
 
 p, ul, table {
-    font-family: "Lora", serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
 
 .asset-link {
-    color: #007bff;
+    color: #1E90FF; /* Warna biru muda untuk link */
     text-decoration: none;
 }
 
@@ -63,46 +84,43 @@ p, ul, table {
     text-decoration: underline;
 }
 
-/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    flex-wrap: wrap;
+    gap: 15px; /* Menambahkan jarak antar gambar */
     position: relative;
 }
 
-/* Gambar dalam gallery */
 .gallery img {
     width: 100%;
+    height: auto;
     max-width: 700px;
-    height: 380px;
-    object-fit: cover;
+    aspect-ratio: 16 / 9; /* Menambahkan rasio 16:9 secara otomatis */
+    object-fit: cover; /* Agar gambar tetap terpotong dengan proporsional */
     cursor: pointer;
     border-radius: 5px;
     border: 2px solid #444;
     transition: transform 0.3s ease;
 }
 
-/* Tombol Navigasi */
 .arrow-container {
     display: flex;
-    justify-content: space-between; /* Tombol di kiri dan kanan */
+    justify-content: space-between;
     position: absolute;
     top: 50%;
     width: 100%;
-    transform: translateY(-50%); /* Menyelaraskan tombol secara vertikal */
+    transform: translateY(-50%);
 }
 
-/* Styling untuk tombol navigasi */
 .arrow {
     font-size: 40px;
     cursor: pointer;
     color: #e0e0e0;
 }
 
-/* Popup */
 .popup {
     display: none;
     position: fixed;
@@ -179,22 +197,11 @@ th {
     border: 2px solid #444;
 }
 
-.gameplay-gif {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 8px;
-    border: 2px solid #444;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Untuk Desktop: Tombol di kiri dan kanan */
 @media (min-width: 768px) {
     .gallery {
         flex-direction: row;
     }
 
-    /* Tombol navigasi di kiri-kanan gambar */
     .arrow-container {
         position: absolute;
         top: 50%;
@@ -204,14 +211,13 @@ th {
     }
 
     .arrow {
-        font-size: 40px; /* Ukuran tombol lebih besar di desktop */
+        font-size: 40px;
     }
 }
 
-/* Untuk Mobile: Tombol di bawah gambar */
 @media (max-width: 768px) {
     .gallery {
-        flex-direction: column; /* Gambar dan tombol di bawah satu sama lain */
+        flex-direction: column;
     }
 
     .arrow-container {
@@ -222,7 +228,7 @@ th {
     }
 
     .arrow {
-        font-size: 30px; /* Ukuran tombol lebih kecil di mobile */
+        font-size: 30px;
     }
 
     .popup img {
@@ -231,9 +237,8 @@ th {
     }
 }
 
-/* Untuk Tampilan Kecil: Tombol lebih kecil */
 @media (max-width: 480px) {
     .arrow {
-        font-size: 24px; /* Ukuran tombol lebih kecil */
+        font-size: 24px;
     }
 }
